@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework2</title>
     <script src="https://kit.fontawesome.com/9cb8fe1d61.js" crossorigin="anonymous"></script>
+    <script src="picture.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    
+    
 </head>
 <body>
     <div class="header-conta">
@@ -13,39 +16,46 @@
             <div class="headertop container flex between">
                 <div class="headerImg flex ">
                     <img src="	https://dmh6legpso131.cloudfront.net/images/logo.svg" alt="五倍logo">
+                    <img src="	https://dmh6legpso131.cloudfront.net/images/logo_ruby.svg" alt="五倍小logo">
                 </div>
-                <div class="flex ">
-                    <div class="flex">    
+                <label for="switch" class="toggle-menu-btn"><i class="fa-solid fa-bars"></i></label>
+                <input type="checkbox" id="switch">
+                <div class="flex  headercheck">
+                    <div class="flex headercheckdiv">    
                         <ul class="headerList  listStyle flex flexright">
                             <li class="listWord">線上課程</li>
                             <li class="listWord">實體課程</li>
                             <li class="listWord">ASTRO Camp</li>
-                            <li class="listWord haverList">企業<i class="fa-solid fa-angle-down"></i>
-                                <div class="secondList">
+                            <label for="subswitch" class="toggle-submenu-btn"><li class="listWord haverList bisList">企業
+                            <i class="fa-solid fa-angle-down"></i>
+                                <input type="checkbox" id="subswitch">
+                                <div class="secondList ">
                                     <ul class="listStyle">
-                                        <li class="secondListWord">企業訓練</li>
-                                        <li class="secondListWord">技術諮詢</li>
-                                        <li class="secondListWord">TalentD</li>
+                                        <li class="secondListWord secondListWord1">企業訓練</li>
+                                        <li class="secondListWord secondListWord2">技術諮詢</li>
+                                        <li class="secondListWord secondListWord3">TalentD</li>
                                     </ul>
                                 </div>
-                            </li>
-                            <li class="listWord haverList">精選<i class="fa-solid fa-angle-down"></i>
-                                <div class="secondList">
+                            </li></label>
+                            <label for="subTowswitch" class="toggle-submenu-btn"><li class="listWord haverList">精選
+                            <i class="fa-solid fa-angle-down"></i>
+                                <input type="checkbox" id="subTowswitch">
+                                <div class="secondList ">
                                     <ul class="listStyle">
-                                        <li class="secondListWord">技術文章</li>
-                                        <li class="secondListWord">學員分享</li>
-                                        <li class="secondListWord">線上直播</li>
-                                        <li class="secondListWord">職涯輔導</li>
-                                        <li class="secondListWord">最新消息</li>
-                                        <li class="secondListWord">媒體報導</li>
+                                        <li class="secondListWord secondListWord4">技術文章</li>
+                                        <li class="secondListWord secondListWord5">學員分享</li>
+                                        <li class="secondListWord secondListWord6">線上直播</li>
+                                        <li class="secondListWord secondListWord7">職涯輔導</li>
+                                        <li class="secondListWord secondListWord8">最新消息</li>
+                                        <li class="secondListWord secondListWord9">媒體報導</li>
                                     </ul>
                                 </div>
-                            </li>
+                            </li></label>
                             <li class="listWord">電子書</li>
                         </ul>
                         
                     </div>
-                    <div class="flex" >
+                    <div class="flex checkloginList" >
                         <ul class="loginList listStyle flex flexright ">
                             <li class=""><a class="aStyle listWord" href="">註冊</a></li>
                             <li class=""><a class="aStyle listWord" href="">登入</a></li>
@@ -60,10 +70,9 @@
           <i class="fa-brands fa-facebook-messenger" aria-hidden="true">
           </i><span class="us">聯繫我們</span>
         </a>
-      </div>
+    </div>
     <section class="slide-section">
-        <div class="carousel">
-          <div class="slide-container">
+        <div class="slide-container">
             <ul class="slide-track flex listStyle">
               <li class="slideImg slideImg1"><img class="img1" src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzQyNCwicHVyIjoiYmxvYl9pZCJ9fQ==--b6da94591c1fcd732743e53012c5380d8d0e5b7d/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTQ0MCw3MDZdfSwicHVyIjoidmFyaWF0aW9uIn19--57a6eac13490b5350943777aa6efaf0699b2494d/Astro%201440x706.webp" /><img class="img2" src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzQyNCwicHVyIjoiYmxvYl9pZCJ9fQ==--b6da94591c1fcd732743e53012c5380d8d0e5b7d/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTQ0MCw3MDZdfSwicHVyIjoidmFyaWF0aW9uIn19--57a6eac13490b5350943777aa6efaf0699b2494d/Astro%201440x706.webp" /></li>
               <li class="slideImg slideImg2"><img class="img1" src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzM1MSwicHVyIjoiYmxvYl9pZCJ9fQ==--da934f3e561063514163167f8ee0ce4c9f886bf7/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTQ0MCw3MDZdfSwicHVyIjoidmFyaWF0aW9uIn19--57a6eac13490b5350943777aa6efaf0699b2494d/Moku%201440x706.webp" /><img class="img2" src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzM1MSwicHVyIjoiYmxvYl9pZCJ9fQ==--da934f3e561063514163167f8ee0ce4c9f886bf7/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTQ0MCw3MDZdfSwicHVyIjoidmFyaWF0aW9uIn19--57a6eac13490b5350943777aa6efaf0699b2494d/Moku%201440x706.webp" /></li>
@@ -72,22 +81,22 @@
               <li class="slideImg slideImg5"><img class="img1" src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzQwOCwicHVyIjoiYmxvYl9pZCJ9fQ==--c5328065ea4f342df353597113f76c15b8d71d06/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTQ0MCw3MDZdfSwicHVyIjoidmFyaWF0aW9uIn19--57a6eac13490b5350943777aa6efaf0699b2494d/TalantD%201440x706.webp" /><img class="img2" src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzQwOCwicHVyIjoiYmxvYl9pZCJ9fQ==--c5328065ea4f342df353597113f76c15b8d71d06/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTQ0MCw3MDZdfSwicHVyIjoidmFyaWF0aW9uIn19--57a6eac13490b5350943777aa6efaf0699b2494d/TalantD%201440x706.webp" /></li>
               <li class="slideImg slideImg6"><img class="img1" src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzM2MiwicHVyIjoiYmxvYl9pZCJ9fQ==--c2b3e0ab41436fae97e72341c91d126f98453c1b/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTQ0MCw3MDZdfSwicHVyIjoidmFyaWF0aW9uIn19--57a6eac13490b5350943777aa6efaf0699b2494d/Git1440x706.webp" /><img class="img2" src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzM2MiwicHVyIjoiYmxvYl9pZCJ9fQ==--c2b3e0ab41436fae97e72341c91d126f98453c1b/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJ3ZWJwIiwicmVzaXplX3RvX2xpbWl0IjpbMTQ0MCw3MDZdfSwicHVyIjoidmFyaWF0aW9uIn19--57a6eac13490b5350943777aa6efaf0699b2494d/Git1440x706.webp" /></li>
             </ul>
-          </div>
-          <div class="slide-buttons-container flex">
-            <button class="slide-buttons slide-buttons1">ASTRO Camp</button>
-            <button class="slide-buttons slide-buttons2">默默會</button>
-            <button class="slide-buttons slide-buttons3">YouTube 頻道</button>
-            <button class="slide-buttons slide-buttons4">Discord 社群</button>
-            <button class="slide-buttons slide-buttons5">求職求才TalentD</button>
-            <button class="slide-buttons slide-buttons6">Git 時光機</button>    
-          </div>
+        </div>
+        <div class="slide-buttons-container flex">
+            <button data-index="0" class="slide-buttons slide-buttons1">ASTRO Camp</button>
+            <button data-index="1" class="slide-buttons slide-buttons2">默默會</button>
+            <button data-index="2" class="slide-buttons slide-buttons3">YouTube 頻道</button>
+            <button data-index="3" class="slide-buttons slide-buttons4">Discord 社群</button>
+            <button data-index="4" class="slide-buttons slide-buttons5">求職求才TalentD</button>
+            <button data-index="5" class="slide-buttons slide-buttons6">Git 時光機</button>    
         </div>
     </section>
+    
 
     <div class="bg-gray">
         <div class="container products-area ">
             <div class="products-title-area flex ">
-                <h2 class="products-title" >線上課程</h2>
+                <h2 class="products-title " >線上課程</h2>
             </div>
             <div class="products-card-area flex between">
                 <div class="products-cards">
@@ -104,7 +113,7 @@
                     </div>
                     <div class="product-content">
                         <h3 class="product-name">HTML/CSS 課程</h3>
-                        <p>對於程式開發完全沒概念，想要用最白話的方式搞懂網頁開發原理！
+                        <p class="product-p">對於程式開發完全沒概念，想要用最白話的方式搞懂網頁開發原理！
                             跨入程式開發的第一步就從 HTML / CSS 開始。
                             若你沒有任何程式背景與基礎，那麼...</p>
                         <div class="price-area flex between">
@@ -127,7 +136,7 @@
                     </div>
                     <div class="product-content">
                         <h3 class="product-name">為你自己學 JavaScript</h3>
-                        <p>你知道如何靈活運用 JavaScript 嗎？
+                        <p class="product-p">你知道如何靈活運用 JavaScript 嗎？
                             JavaScript 主要運行於瀏覽器中的動態腳本語言，透過它可以處理與瀏覽器的互動。
                             JavaScript 簡單上手、應用範圍廣泛，容易有成就感，但精通不易。
                             隨著前端...</p>
@@ -151,7 +160,7 @@
                     </div>
                     <div class="product-content">
                         <h3 class="product-name">動手玩 React！</h3>
-                        <p>如果你/妳常常聽到 React，但又一直沒機會體驗看看，歡迎跟我們一起透過實作小遊戲來認識 React。
+                        <p class="product-p">如果你/妳常常聽到 React，但又一直沒機會體驗看看，歡迎跟我們一起透過實作小遊戲來認識 React。
                             React 是個用來實作使用者介面的 JavaScript 函式庫，在使用上只要專注於資料邏輯...
                         </p>
                         <div class="price-area flex between">
@@ -174,7 +183,7 @@
                     </div>
                     <div class="product-content">
                         <h3 class="product-name">前端開發環境新手村</h3>
-                        <p>這系列影片將帶您走訪，「前端」開發該知道的初階技能，像是編輯器、HTML、CSS 與 JavaScript 基本概念。
+                        <p class="product-p">這系列影片將帶您走訪，「前端」開發該知道的初階技能，像是編輯器、HTML、CSS 與 JavaScript 基本概念。
                             前端，相較於後端，決定了一個網站該怎麼呈現，堪稱一個網站的門面...
                         </p>
                         <div class="price-area flex between">
@@ -197,7 +206,7 @@
                     </div>
                     <div class="product-content">
                         <h3 class="product-name">React 完全進階攻略</h3>
-                        <p>
+                        <p class="product-p">
                             當專案發展到一定程度，會搭配框架加速開發，而 React 在近幾年來成為國內外知名電商的框架使用首選！值得注意的是，React 更在短時間內衝進 Github 前十熱門專案，並贏得 Airbnb、Netflix ...
                         </p>
                         <div class="price-area flex between">
@@ -220,7 +229,7 @@
                     </div>
                     <div class="product-content">
                         <h3 class="product-name">Git 小教室</h3>
-                        <p>業界使用率最高的版本控制系統 - Git，是身為網頁開發工程師都知道的工具！
+                        <p class="product-p">業界使用率最高的版本控制系統 - Git，是身為網頁開發工程師都知道的工具！
                             忘了開分支了怎麼解決？沒有 Git 伺服器可以用的話，要怎麼上傳進度？
                             讓高見龍老師向你說明要點！小教室...</p>
                         <div class="price-area flex between">
@@ -243,7 +252,7 @@
                     </div>
                     <div class="product-content">
                         <h3 class="product-name">坐上 Git 時光機 - 版本控制（直播）</h3>
-                        <p>透過網路資源或書籍學習 Git ，卻還是不確定該如何實際操作？ 網路上的芳鄰或 NAS 的共⽤資料夾，又不知道被誰改掉了︖ 想導入 Git 改善遠端共同協作流程，優化程式開發與維護，讓這門課...
+                        <p class="product-p">透過網路資源或書籍學習 Git ，卻還是不確定該如何實際操作？ 網路上的芳鄰或 NAS 的共⽤資料夾，又不知道被誰改掉了︖ 想導入 Git 改善遠端共同協作流程，優化程式開發與維護，讓這門課...
 
                         </p>
                         <div class="price-area flex between">
@@ -266,7 +275,7 @@
                     </div>
                     <div class="product-content">
                         <h3 class="product-name">工作上用得到的函數式程式設計</h3>
-                        <p>隨著多核心電腦成為主流、分散式系統架構也成為顯學，函數式程式設計的重要性也與日俱增。跟物件導向程式設計相比，函數式程式設計著重於用更簡潔的方向表達程式碼真正的意圖。因此當學會...
+                        <p class="product-p">隨著多核心電腦成為主流、分散式系統架構也成為顯學，函數式程式設計的重要性也與日俱增。跟物件導向程式設計相比，函數式程式設計著重於用更簡潔的方向表達程式碼真正的意圖。因此當學會...
 
                         </p>
                         <div class="price-area flex between">
@@ -289,7 +298,7 @@
                     </div>
                     <div class="product-content">
                         <h3 class="product-name">Webpack 5 入門</h3>
-                        <p>當你專案裡的程式碼越來越多，開發和管理維護是否日益困難？Webpack 可以將各式檔案資源模組化並打包，讓瀏覽器好編譯，更不用手動逐一檔案操作引入，只要使用 Webpack 就能有效提升...
+                        <p class="product-p">當你專案裡的程式碼越來越多，開發和管理維護是否日益困難？Webpack 可以將各式檔案資源模組化並打包，讓瀏覽器好編譯，更不用手動逐一檔案操作引入，只要使用 Webpack 就能有效提升...
 
                         </p>
                         <div class="price-area flex between">
@@ -323,7 +332,7 @@
                     </div>
                     <div class="product-content">
                         <h3 class="product-name">Laravel 入門</h3>
-                        <p>想讓資深開發前輩帶你快速入門 Laravel 嗎？
+                        <p class="product-p">想讓資深開發前輩帶你快速入門 Laravel 嗎？
                             本課程將帶你快速掌握 Laravel 的核心概念，透過工作坊形式，實際運用技能
                             減少你自學摸索技能的碰撞期！</p>
                         <div class="price-area flex between">
@@ -345,7 +354,7 @@
                     </div>
                     <div class="product-content">
                         <h3 class="product-name">React 全攻略 - 入門到進階</h3>
-                        <p>讓你打好 React 基礎，成為一個更扎實的 React 前端工程師。
+                        <p class="product-p">讓你打好 React 基礎，成為一個更扎實的 React 前端工程師。
                             學過 Vue.js 或 Angular 的前端好手，想要入手 React 該如何快速上手？
                             想透過 React 幫助你提升開發能力、精進 JavaScript 能力。</p>
                         <div class="price-area flex between">
@@ -367,7 +376,7 @@
                     </div>
                     <div class="product-content">
                         <h3 class="product-name">Docker 實戰指南</h3>
-                        <p>本課程從基礎操作開始，介紹到底層實現 Docker 的技術，特別是 Docker image 和 Dockerfile 的開發和優化。
+                        <p class="product-p">本課程從基礎操作開始，介紹到底層實現 Docker 的技術，特別是 Docker image 和 Dockerfile 的開發和優化。
   
                             課程將通過實驗驗證、動手操作和問題除錯等各面向，做帶領學員掌握 Docker...
                         </p>
@@ -390,7 +399,7 @@
                     </div>
                     <div class="product-content">
                         <h3 class="product-name">Vue.js 3.x 與 Pinia 前端開發實戰</h3>
-                        <p>你曾經遇到以下狀況嗎？
+                        <p class="product-p">你曾經遇到以下狀況嗎？
                             買了 Vue.js 的線上課程或書籍，卻一直沒有時間看完嗎？
                             即使有了 Vue.js 的開發經驗，但也沒有機會確認自己是否觀念正確。
                             想要知道資深的 Vue.js 工程師是如何...
@@ -406,30 +415,37 @@
             
         </div>
     </div>
-
-    <div class="bg-gray">
-        <div class="astro-cotainer container">
-            <div class="astro-text">
-                <h2 class="astro-logo">ASTRO CAMP</h2>
-                <h3 class="astro-title">三個月實戰轉職全端工程師</h3>
-                <p class="astro-p1">除了提供前端到後端課程外，課程期間還包含履歷健檢、模擬面試、專題製作、企業交流等服務。</p>
-                <p class="astro-p2">裝備你的軟、硬實力，讓零基礎決心轉職工程師，再也不是紙上談兵。</p>
-                <div class="more">
-                    <a href=""><button>了解課程內容<i class="fa-solid fa-arrow-right"></i></button></a>
-                </div>
-            </div>
-            <img src="https://dmh6legpso131.cloudfront.net/images/astrocamp/home/astrocamp-red-rocket.svg" alt="火箭圖">
+    <section class="astro-area bg-gray">
+        <div class="astro-bgimg">
+          <h2 class="caption">ASTRO CAMP</h2>
+          <h3 class="sub-title">三個月實戰轉職全端工程師</h3>
+          <div class="content">
+            <p>
+              除了提供前端到後端課程外，課程期間還包含履歷健檢、模擬面試、專題製作、企業交流等服務。
+            </p>
+            <p>
+              裝備你的軟、硬實力，讓零基礎決心轉職工程師，再也不是紙上談兵。
+            </p>
+          </div>
+          <div class="knowBtn">
+            <button>了解課程內容<i class="fa-solid fa-arrow-right"></i></button>
+          </div>
         </div>
-    </div>
-    
-    <div class="demo-container">
-        <div class="demo">
-            <h3 class="demo-title">Demo Day 活動直擊 👀</h3>
-            <div class="demo-yt">
-                <iframe width="1024" height="576" src="https://www.youtube.com/embed/LZbp5p_UUQE?si=Uj54GBerc4M3BW9m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="bg-pink">
+            <div class="video">
+              <h3>Demo Day 活動直擊 👀</h3>
+              <div>
+                <i class="fa-brands fa-youtube"></i>
+                <video
+                  poster="https://i.ytimg.com/vi_webp/u_Z833xOoiw/maxresdefault.webp"
+                  controls="true"
+                >
+                  <source src="" type="video/mp4" />
+                </video>
+              </div>
             </div>
         </div>
-    </div>
+    </section>
 
 
     <div class="bg-gray">
@@ -438,7 +454,7 @@
                 <h2 class="products-title" >精選文章</h2>
             </div>
             <div class="article-card-area flex between">
-                <div class="article-cards flex">
+                <div class="article-cards flex ">
                     <div class="article-img">
                         <img src="https://dmh6legpso131.cloudfront.net/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsiZGF0YSI6MzQ5NywicHVyIjoiYmxvYl9pZCJ9fQ==--68f760d323294ae99504517eba3f72c3e63c160a/eyJfcmFpbHMiOnsiZGF0YSI6eyJmb3JtYXQiOiJwbmciLCJyZXNpemVfdG9fbGltaXQiOlsxMjgwLDcyMF19LCJwdXIiOiJ2YXJpYXRpb24ifX0=--cfbe06774f098f375fc6e84581c8de78b8e9254f/Vue%20%20%E8%AA%B2%E7%A8%8B%E5%BF%83%E5%BE%97_1.png" alt="">
                     </div>
@@ -523,47 +539,45 @@
         </div>
     </div>
 
-    <div class="bg-gray trin1">
-       <div class="blue-trin1"></div> 
-    </div>
+    
 
-    <div class="bg-blue">
-        <div class="container products-area ">
-            <div class="products-title-area bis-title-area flex ">
-                <h2 class="products-title bis-title" >企業服務</h2>
+    <div class="bg-gray  ">
+        <div class="bg-blue">
+            <div class=" container products-area bg-blue">
+                <div class="products-title-area bis-title-area flex ">
+                    <h2 class="products-title bis-title" >企業服務</h2>
+                </div>
+                <div class="article-card-area flex between">
+                    <div class="bis-cards">
+                        <div class="bis-img">
+                            <img src="https://dmh6legpso131.cloudfront.net/images/banners/training-banner-pc.svg" alt="">
+                        </div>
+                        <div class="bis-text ">
+                            <h3>企業訓練</h3>
+                            <p class="bis-edit">五倍學院擁有專業師資並提供多元課程，無論是基礎的新人訓練或是培訓高階技術人才，我們透過量身打造企業所需課程，提升團隊成員的即戰力，隨時優化和調整教學內容，確保企業實力走在技術頂端。</p>
+                            <p class=" bis-day">
+                                <button>了解更多<i class="fa-solid fa-arrow-right"></i></button>
+                            </p>
+                        </div>  
+                    </div>
+                    <div class="bis-cards">
+                        <div class="bis-img">
+                            <img src="https://dmh6legpso131.cloudfront.net/images/banners/consult-banner-pc.svg" alt="">
+                        </div>
+                        <div class="bis-text ">
+                            <h3>技術諮詢</h3>
+                            <p class="bis-edit">五倍學院了解企業產品與開發需求，針對痛點提出完善建議，以及協助維護和提供技術諮詢，讓擁有十多年豐富經驗的工程師團隊，依照企業的產品需求指引企業內部工程師。</p>
+                            <p class=" bis-day">
+                                <button>了解更多<i class="fa-solid fa-arrow-right"></i></button>
+                            </p>
+                        </div>  
+                    </div>
+                </div>   
             </div>
-            <div class="article-card-area flex between">
-                <div class="bis-cards">
-                    <div class="bis-img">
-                        <img src="https://dmh6legpso131.cloudfront.net/images/banners/training-banner-pc.svg" alt="">
-                    </div>
-                    <div class="bis-text ">
-                        <h3>企業訓練</h3>
-                        <p class="bis-edit">五倍學院擁有專業師資並提供多元課程，無論是基礎的新人訓練或是培訓高階技術人才，我們透過量身打造企業所需課程，提升團隊成員的即戰力，隨時優化和調整教學內容，確保企業實力走在技術頂端。</p>
-                        <p class=" bis-day">
-                            <button>了解更多<i class="fa-solid fa-arrow-right"></i></button>
-                        </p>
-                    </div>  
-                </div>
-                <div class="bis-cards">
-                    <div class="bis-img">
-                        <img src="https://dmh6legpso131.cloudfront.net/images/banners/consult-banner-pc.svg" alt="">
-                    </div>
-                    <div class="bis-text ">
-                        <h3>技術諮詢</h3>
-                        <p class="bis-edit">五倍學院了解企業產品與開發需求，針對痛點提出完善建議，以及協助維護和提供技術諮詢，讓擁有十多年豐富經驗的工程師團隊，依照企業的產品需求指引企業內部工程師。</p>
-                        <p class=" bis-day">
-                            <button>了解更多<i class="fa-solid fa-arrow-right"></i></button>
-                        </p>
-                    </div>  
-                </div>
-            </div>   
         </div>
     </div>
     
-    <div class="bg-gray trin1">
-        <div class="blue-trin2"></div> 
-     </div>
+   
 
     <footer class="">
         <section class="footer-about">
@@ -600,7 +614,7 @@
                                 五倍學院</a>  
                             </li>
                         </ul>
-                        <ul class="flex listStyle connection-inf-li connection-inf-nav-li">
+                        <ul class="flex listStyle connection-inf-li connection-inf-nav-li connection-inf-nav-li2">
                             <li>關於五倍</li>
                             <li>常見問題</li>
                             <li>聯絡我們</li>
@@ -623,11 +637,8 @@
                   <a  class="footer-int-a" href="https://bsb.kh.edu.tw/afterschool/register/detail.jsp?unit=20201702240001" alt="台北市短期補習班查詢" >台北市短期補習班立案第 7594 號</a>
                 </span>
             </p>
-            <p>五倍紅寶石程式資訊教育股份有限公司附設臺北市私立五倍紅寶石文理技藝短期補習班（統一編號：88117125）</p>
+            <p class="bisName">五倍紅寶石程式資訊教育股份有限公司附設臺北市私立五倍紅寶石文理技藝短期補習班（統一編號：88117125）</p>
         </section>
-    </footer>
-                
-                
-                
+    </footer>              
 </body>
 </html>
